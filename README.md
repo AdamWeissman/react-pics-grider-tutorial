@@ -66,3 +66,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### also there's a gitignore for the API...
+
+inside of src/api/unsplash.js is 
+
+import axios from 'axios';
+import React from 'react';
+
+export default axios.create({
+  baseURL: 'https://api.unsplash.com',
+  headers: {
+    Authorization: 'Client-ID THISISASECRETCODEUNAVAILABLEONGITHUB'
+  }
+});
