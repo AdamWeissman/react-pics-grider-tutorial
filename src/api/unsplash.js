@@ -4,6 +4,6 @@ import React from 'react';
 export default axios.create({
   baseURL: 'https://api.unsplash.com',
   headers: {
-  huh?    
+  huh? why doesn't this get ignored?
   }
 });
